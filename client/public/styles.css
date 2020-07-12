@@ -1,0 +1,99 @@
+.color-hex-codes {
+    color: #5c8727; 
+    color: #e86c1e;
+    color: #b0bc22; 
+    color: #005581;
+    color: #cf4520;
+    color: #f2f2f2;
+    color: #717073;
+    color: #460054;
+}
+
+body{
+  font-family: "Arial, Helvetica Neue, Helvetica, sans-serif";
+  font-size: 24px;
+  color: #464646;
+  background: #fff !important;
+  line-height: normal;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h4 {
+  color: #5c8727;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.usf-image {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* Login Form */
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    color: #5c8727;
+    text-align: center;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+    border-color: #5c8727;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #5c8727;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #5c8727);
+  }
+
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .form-signin .btn {
+    margin: auto
+  }
+  
+  .form-signin .btn-primary {
+      background-color: #5c8727;
+      border-color: #5c8727;
+  }
+
+  .form-signin .btn-primary:hover {
+    background-color: #cf4520;
+    border-color: #cf4520;
+  }
+  
+  .form-signin select[id="inputRole"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 50px 0;  
+    color: #717073;
+    font-size: 18px;
+    text-align: center;
+  }
