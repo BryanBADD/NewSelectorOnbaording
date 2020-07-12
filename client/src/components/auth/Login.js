@@ -22,7 +22,7 @@ class Login extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
       this.props.history.push("/dashboard"); // push user to dashboard when they login
     }
@@ -50,14 +50,14 @@ render() {
     const { errors } = this.state;
 return (
       <div className="container">
-        <div style={{ marginTop: "4rem" }} className="row">
-          <div className="col s8 offset-s2">
+        <div style={{ paddingBottom: "20px" }} className="row">
+          <div className="col s8 offset-s2 center-align">
             <Link to="/" className="btn-flat waves-effect">
               <i className="material-icons left">keyboard_backspace</i> Back to
               home
             </Link>
             <div className="row center-align">
-              <img className="mb-4" src="images/logo.png" alt=""></img>
+              <img className="mb-4 " style={{ paddingTop: "50px" }} src="images/logo.png" alt=""></img>
             </div>
             <div className="col s12">
               <h4 className="center-align">
@@ -71,19 +71,19 @@ return (
               <div className="input-field col s12">
                 <input
                   onChange={this.onChange}
-                  value={this.state.email}
-                  error={errors.email}
+                  value={this.state.userName}
+                  error={errors.userName}
                   id="userName"
                   type="text"
                   placeholder="Username"
                   className={classnames("", {
-                    invalid: errors.email || errors.emailnotfound
+                    invalid: errors.userName || errors.userNamenotfound
                   })}
                 />
-                {/* <label htmlFor="userName">Username</label> */}
+                <label htmlFor="userName"></label>
                 <span className="red-text">
                   {errors.userName}
-                  {errors.unserNamenotfound}
+                  {errors.userNamenotfound}
                 </span>
               </div>
               <div className="input-field col s12">
@@ -98,7 +98,7 @@ return (
                     invalid: errors.password || errors.passwordincorrect
                   })}
                 />
-                {/* <label htmlFor="password">Password</label> */}
+                <label htmlFor="password"></label>
                 <span className="red-text">
                   {errors.password}
                   {errors.passwordincorrect}
