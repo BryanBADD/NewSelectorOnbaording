@@ -61,7 +61,7 @@ return (
             </div>
             <div className="col s12">
               <h4 className="center-align">
-                <b>Login</b> below
+                <b>Login</b>
               </h4>
               {/* <p className="grey-text text-darken-1">
                 Don't have an account? <Link to="/register">Register</Link>
