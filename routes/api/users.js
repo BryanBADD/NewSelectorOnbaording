@@ -71,7 +71,7 @@ router.post("/login", (req, res) => {
       
         // Check if user exists
       if (!user) {
-        return res.status(404).json({ emailnotfound: "Email not found" });
+        return res.status(404).json({ usernamenotfound: "User not found" });
       }
   
       // Check password
@@ -81,7 +81,9 @@ router.post("/login", (req, res) => {
           // Create JWT Payload
           const payload = {
             id: user.id,
-            name: user.userName
+            name: user.fName,
+            role: user.role,
+            location: user.location
           };
        
           // Sign token
